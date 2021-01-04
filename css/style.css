@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+.bg-blue {
+  background: #1e88e5; }
+
+.bg-blue-shade {
+  background: #186cb7; }
+
+.text-blue {
+  color: #1e88e5; }
+
+.bg-orange {
+  background: #ff9800; }
+
+.text-orange {
+  color: #ff9800; }
+
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  margin-top: 75px;
+  font-family: "Lato", sans-serif; }
+
+.jumbotron {
+  background-image: url(../images/pic3.jpg);
+  background-position: center; }
+
+.navbar {
+  background-color: #1e88e5;
+  height: 75px;
+  padding-bottom: 0;
+  border-bottom: #186cb7 solid 2px; }
+  .navbar .navbar-brand,
+  .navbar .nav-item .nav-link,
+  .navbar .navbar-toggler {
+    color: #fff; }
+  .navbar .navbar-brand {
+    font-family: "Noto Serif", serif;
+    font-size: 1.7rem;
+    transition: color 0.3s ease-in-out; }
+    .navbar .navbar-brand:hover {
+      color: #0c365b; }
+    .navbar .navbar-brand:focus {
+      color: #fff; }
+  .navbar .nav-link {
+    font-size: 1.1rem; }
+  .navbar .navbar-nav {
+    opacity: 0.95; }
+
+.carousel .carousel-item img {
+  max-height: 400px;
+  object-fit: cover; }
+
+.card {
+  opacity: 1;
+  transition: opacity 4s; }
+
+.fade-in {
+  opacity: 0; }
+
+#media-links a {
+  text-decoration: none; }
+
+.row {
+  margin-right: 0;
+  margin-left: 0; }
+
+#main-footer {
+  border-top: #186cb7 2px solid; }
+
+.image-fill {
+  background-image: url(../images/pic5.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.image-fill2 {
+  background-image: url(../images/pic6.jpg);
+  background-position: center;
+  background-size: cover; }
+
+@media (max-width: 768px) {
+  .mb-responsive {
+    margin-bottom: 1.5rem; } }
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0; }
+    .container .navbar-brand,
+    .container .navbar-toggler {
+      margin: 0 30px; }
+
+  .navbar .navbar-brand {
+    font-size: 1.4rem; } }
+
+/*# sourceMappingURL=style.css.map */

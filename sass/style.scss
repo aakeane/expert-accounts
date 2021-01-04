@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+@import "variables";
+
+// Text and background colours
+.bg-blue {
+  background: $primary-blue;
+}
+.bg-blue-shade {
+  background: $primary-blue-shade;
+}
+.text-blue {
+  color: $primary-blue;
+}
+.bg-orange {
+  background: $secondary-orange;
+}
+.text-orange {
+  color: $secondary-orange;
+}
+
+// General styles
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  margin-top: 75px;
+  font-family: "Lato", sans-serif;
+}
+.jumbotron {
+  background-image: url(../images/pic3.jpg);
+  background-position: center;
+}
+.navbar {
+  background-color: $primary-blue;
+  height: 75px;
+  padding-bottom: 0;
+  border-bottom: $primary-blue-shade solid 2px;
+  .navbar-brand,
+  .nav-item .nav-link,
+  .navbar-toggler {
+    color: #fff;
+  }
+  .navbar-brand {
+    font-family: "Noto Serif", serif;
+    font-size: 1.7rem;
+    transition: color 0.3s ease-in-out;
+    &:hover {
+      color: #0c365b;
+    }
+    &:focus {
+      color: #fff;
+    }
+  }
+  .nav-link {
+    font-size: 1.1rem;
+  }
+  .navbar-nav {
+    opacity: 0.95;
+  }
+}
+.carousel .carousel-item {
+  img {
+    max-height: 400px;
+    object-fit: cover;
+  }
+}
+
+.card {
+  opacity: 1;
+  transition: opacity 4s;
+}
+.fade-in {
+  opacity: 0;
+}
+
+#media-links a {
+  text-decoration: none;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#main-footer {
+  border-top: $primary-blue-shade 2px solid;
+}
+
+// Filling div's with image (About Us & Our Story)
+.image-fill {
+  background-image: url(../images/pic5.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.image-fill2 {
+  background-image: url(../images/pic6.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+// Media queries
+// Margin bottom
+@media (max-width: 768px) {
+  .mb-responsive {
+    margin-bottom: 1.5rem;
+  }
+}
+// Navbar Hamburger - Full width
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0;
+    .navbar-brand,
+    .navbar-toggler {
+      margin: 0 30px;
+    }
+  }
+  .navbar .navbar-brand {
+    font-size: 1.4rem;
+  }
+}
