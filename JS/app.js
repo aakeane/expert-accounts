@@ -52,5 +52,5 @@ function fadeInService() {
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     fadeInService();
-  }, 1000);
+  }, 20);
 });
